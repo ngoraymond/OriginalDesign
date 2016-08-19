@@ -1,18 +1,44 @@
 void setup()
 {
-  size(300,200);
+  size(700,390);
 }
 void draw()
 {
- strokeWeight(10);
-  stroke(255,255,255);
-  line(0,100,200,100);
-  stroke(255,0,0);
-  line(0,120,200,120);
-  fill(255,0,0);
+  background(255);
   strokeWeight(1);
-  rect(0,0,100,200);
+  noStroke();
+  stripe();
+  flag();
 }
+void flag()
+{
+  fill(255,255,255);
+  rect(100,0,200,200);
+  fill(255,0,0);
+  rect(300,0,100,200);
+  ellipse(200,100,120,120);
+  fill(0,0,255);
+  rect(0,0,100,200);
+  stroke(0);
+  noFill();
+  rect(0,0,400,200);
+  fill(255,255,0);
+  star();
+}
+void stripe()
+{
+	
+	fill(255,0,0);
+	rect(0,0,700,30);
+	rect(0,60,700,30);
+	rect(0,120,700,30);
+	rect(0,180,700,30);
+	rect(0,240,700,30);
+	rect(0,300,700,30);
+	rect(0,360,700,30);
+}
+void star()
+{
 
-
+}
 
