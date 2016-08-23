@@ -1,4 +1,4 @@
-int intColor=1;
+int intColor=255;
 void setup()
 {
   size(700,390);
@@ -10,7 +10,8 @@ void draw()
   noStroke();
   stripe();
   flag();
-  intColor++;
+  message();
+  intColor--;
   
  }
 
@@ -40,5 +41,10 @@ void stripe()
 	rect(0,240,700,30);
 	rect(0,300,700,30);
 	rect(0,360,700,30);
+}
+void message()
+{
+	fill(0,0,0);
+	text("You have been looking at this for " + frameCount/60 + " seconds.",0,380);
 }
 
