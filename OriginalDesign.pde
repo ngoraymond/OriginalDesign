@@ -45,6 +45,6 @@ void stripe()
 void message()
 {
 	fill(0,0,0);
-	text("You have been looking at this for " + frameCount/60 + " seconds.",0,380);
+	text("You have been looking at this for " + (int)(frameCount/60) + " seconds.",0,380);
 }
 
